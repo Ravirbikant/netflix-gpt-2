@@ -22,7 +22,14 @@ const MainContainer = () => {
         <div className="video-container-text ms-5 ps-5">
           <h2>{mainMovie?.original_title}</h2>
           <div className="d-flex">
-            <button className="me-2">▶ Play</button>
+            <button
+              className="me-2"
+              onClick={() =>
+                navigate("/showTrailer", { state: { movie: mainMovie } })
+              }
+            >
+              ▶ Play
+            </button>
             <button
               onClick={() => {
                 setShowMoreInfo(!showMoreInfo);
