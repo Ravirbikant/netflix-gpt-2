@@ -31,6 +31,10 @@ const MainContainer = () => {
               ▶ Play
             </button>
             <button
+              style={{
+                background: "rgba(86,82,81, 0.7)",
+                color: "white",
+              }}
               onClick={() => {
                 setShowMoreInfo(!showMoreInfo);
               }}

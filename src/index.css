@@ -78,6 +78,7 @@ body {
 }
 
 .video-container-text {
+  position: absolute;
   width: 50%;
 }
 
@@ -90,13 +91,19 @@ body {
 }
 
 .main-video {
-  width: 100vw;
-  height: 80vh;
-  z-index: -5;
-  position: absolute;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  z-index: -2;
 }
 
 .main-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
@@ -105,4 +112,28 @@ body {
   font-size: 17.92px;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+.show-trailer-div {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%;
+}
+
+.show-trailer-div iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-list-div {
+  overflow-y: hidden;
+  scrollbar-color: red black;
+  scrollbar-width: thin;
 }

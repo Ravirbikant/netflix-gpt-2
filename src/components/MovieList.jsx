@@ -5,7 +5,7 @@ const MovieList = ({ title, movies }) => {
   return (
     <div className="mt-4">
       <p className="movie-list-titles">{title}</p>
-      <div className="d-flex ">
+      <div className="d-flex movie-list-div">
         {movies &&
           movies?.map((movie) => (
             <MovieCard

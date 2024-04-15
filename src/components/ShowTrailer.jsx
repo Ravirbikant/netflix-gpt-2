@@ -24,7 +24,7 @@ const ShowTrailer = () => {
   }, []);
 
   return (
-    <div>
+    <div className="show-trailer-div">
       {trailerKey && (
         <iframe
           src={
