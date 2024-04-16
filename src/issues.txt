@@ -1,6 +1,7 @@
 3. Sign Up page via email
 5. Add loading states
-6. Sign Up page
 7. Video on finishing.
-9. Add gradient effect to header
 10. Upload with HMR
+11. Sign out button
+12. Movie Grid
+13. Responsive

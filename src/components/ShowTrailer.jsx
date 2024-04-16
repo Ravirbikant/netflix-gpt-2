@@ -30,7 +30,7 @@ const ShowTrailer = () => {
           src={
             "https://www.youtube.com/embed/" +
             trailerKey +
-            "?&autoplay=1&mute=1"
+            "?&autoplay=1&mute=1&loop=1"
           }
           title="YouTube video player"
           frameborder="0"

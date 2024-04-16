@@ -55,7 +55,7 @@ const Header = () => {
   }
 
   return (
-    <div className="d-flex justify-content-between align-items-center header position-absolute w-100 px-4 py-2">
+    <div className="d-flex justify-content-between align-items-center header position-absolute w-100 px-4 py-2 header-div">
       <img
         className="logo-image"
         src={LOGO}
@@ -78,8 +78,9 @@ const Header = () => {
             {showGPTSearch ? "Home" : "GPT Search"}
           </button> */}
           <div>
-            <img src={user.photoURL} alt="" />
-            <button onClick={handleSignOut}>Sign Out</button>
+            <button onClick={handleSignOut} style={{ border: "none" }}>
+              <img src={user.photoURL} alt="" />
+            </button>
           </div>
         </div>
       )}
