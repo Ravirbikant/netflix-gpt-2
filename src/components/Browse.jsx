@@ -9,18 +9,21 @@ import GPTSearch from "./GPTSearch";
 import { useSelector } from "react-redux";
 
 const Browse = () => {
-  const showGPTSearch = useSelector((store) => store.gptSearch.showGPTSearch);
+  // const showGPTSearch = useSelector((store) => store.gptSearch.showGPTSearch);
 
-  useNowPlayingMovies();
-  usePopularMovies();
-  useTopRatedMovies();
-  useUpcomingMovies();
+  // useNowPlayingMovies();
+  // usePopularMovies();
+  // useTopRatedMovies();
+  // useUpcomingMovies();
 
   return (
     <div>
       <Header />
       {/* {showGPTSearch && showGPTSearch ? <GPTSearch /> : <MainContainer />} */}
-      <MainContainer />
+      {/* <MainContainer /> */}
+      <div className="apology">
+        <h2>We appologize but TMDB is down right now please come back later</h2>
+      </div>
     </div>
   );
 };
