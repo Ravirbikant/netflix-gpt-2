@@ -7,6 +7,7 @@ import { useTopRatedMovies } from "../hooks/useTopRatedMovies";
 import { useUpcomingMovies } from "../hooks/useUpcomingMovies";
 import GPTSearch from "./GPTSearch";
 import { useSelector } from "react-redux";
+import repair from "../Images/repair.png";
 
 const Browse = () => {
   // const showGPTSearch = useSelector((store) => store.gptSearch.showGPTSearch);
@@ -23,6 +24,7 @@ const Browse = () => {
       {/* <MainContainer /> */}
       <div className="apology">
         <h2>We appologize but TMDB is down right now please come back later</h2>
+        <img src={repair} alt="" />
       </div>
     </div>
   );
